@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.a{
+			width: 200px;
+			height: 200px;
+			border-radius: 10px;
+			background: url(bc.png);
+			background-size: 100%;/* 适配 */
+			transition:all 2s;/*过渡添加到要过渡的元素上，使移入移出都有过渡效果*/
+		}
+		.a:hover{
+			width: 400px;
+			height: 400px;
+		}
+		span{
+			font-family: 'myfont' ;
+			font-size: 80px;
+			color:green;
+		}
+
+		@font-face{/*自定义字体*/
+			font-family: 'myfont';
+			src:url('font_1404888168_2057645.ttf');
+		}
+
+		.sup{
+			width: 100%;
+			border: 10px red solid;
+			height: 300px;
+		}
+		.sub{
+			
+			float: left;
+			height: 300px;
+			width: 50%;
+			background: pink;
+			border: 5px solid grey ;
+			box-sizing: border-box;/* 用户界面,子级宽度按比例分父级的宽度，当子级有border时会溢出，加上box-sizing可以解决问题*/
+		}
+	</style>
+</head>
+<body>
+	<div class='a'>
+	</div>
+	<span>&#58883;</span>
+	<span>&#58881;</span>
+	<span>&#58882;</span>
+	<span>&#58884;</span>
+
+	<div class='sup'>
+		<div class='sub'></div>
+		<div class='sub'></div>
+	</div>
+</body>
+</html>
